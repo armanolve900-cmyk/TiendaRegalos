@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DetalleProducto"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="10dp"
+
+        >
+        <ImageButton
+            android:id="@+id/btn_regresar_detalle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#0091EA"
+            android:src="@drawable/icon05"
+            android:padding="10dp"
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/usuario_detalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" nombre cliente usuario"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_marginHorizontal="20dp"
+
+
+
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/btn_carrito_detalle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:backgroundTint="#c42217"
+            android:src="@drawable/icon06"
+            android:padding="10dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+
+
+            <ImageView
+                android:id="@+id/imagen_detalle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleY=".6"
+                android:scaleX=".6"
+                android:src="@drawable/ar01"
+                android:layout_marginTop="-100dp"
+                android:layout_marginBottom="-100dp"
+
+                />
+
+            <TextView
+                android:id="@+id/nombre_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NOMBRE DEL PRODUCTO "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="20dp"
+
+                />
+
+
+            <TextView
+                android:id="@+id/descripcion_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="descripcion del producto"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:id="@+id/precio_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$99999099.9999"
+                android:textSize="18sp"
+                android:layout_marginTop="30dp"
+                android:textAlignment="viewEnd"
+
+
+                />
+            <Button
+                android:id="@+id/btn_comprar_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMPAR"
+                android:backgroundTint="#0091EA"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginBottom="50dp"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>
